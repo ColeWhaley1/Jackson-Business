@@ -262,16 +262,16 @@ function JacksonSite() {
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-8">
             <p className="text-gray-500 text-sm uppercase tracking-widest font-semibold mb-3">Call or Text Jackson</p>
             <a
-              href="tel:+15555551234"
+              href="tel:+15712053378"
               className="text-4xl md:text-5xl font-extrabold text-blue-900 hover:text-blue-700 transition-colors block mb-2"
             >
-              (555) 555-1234
+              (571) 205-3378
             </a>
             <p className="text-gray-400 text-sm">Available Mon–Sat · Usually responds within the hour</p>
           </div>
 
           <a
-            href="sms:+15555551234"
+            href="sms:+15712053378"
             className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-extrabold text-xl px-12 py-5 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto"
           >
             📱 Text Me to Schedule!
@@ -286,7 +286,7 @@ function JacksonSite() {
       {/* Footer */}
       <footer className="bg-blue-900 text-blue-300 text-center py-6 px-4">
         <p className="font-bold text-white mb-1">⚡ Jackson's Neighborhood Services</p>
-        <p className="text-sm">Serving your community with pride · <a href="tel:+15555551234" className="hover:text-yellow-400 transition-colors">(555) 555-1234</a></p>
+        <p className="text-sm">Serving your community with pride · <a href="tel:+15712053378" className="hover:text-yellow-400 transition-colors">(571) 205-3378</a></p>
       </footer>
     </div>
   )

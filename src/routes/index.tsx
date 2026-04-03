@@ -9,26 +9,20 @@ const services = [
   {
     icon: '🚗',
     name: 'Car Wash',
-    price: '$15',
-    description: 'Hand wash, rinse, and dry. Your car will be sparkling clean!',
-  },
-  {
-    icon: '🌿',
-    name: 'Weed Pulling / Garden Cleanup',
     price: '$20',
-    description: 'I\'ll clear out weeds and tidy up your garden beds.',
+    description: 'Wash, rinse, and dry. Your car will be sparkling clean!',
   },
   {
-    icon: '🌱',
-    name: 'Lawn Mowing',
+    icon: '🚮',
+    name: 'Trash Bin Cleaning',
     price: '$25',
-    description: 'A clean, even mow that makes your yard look great.',
+    description: 'I\'ll clean and deodorize your trash bins, keeping your outdoor space fresh.',
   },
   {
-    icon: '🏃',
-    name: 'General Errands / Odd Jobs',
-    price: '$10/hr',
-    description: 'Need something done? I\'m on it — from trips to the store to light hauling.',
+    icon: '🪟',
+    name: 'Window Cleaning',
+    price: '$5/small, $10/large',
+    description: 'Crystal clear windows that let the sunshine in.',
   },
 ]
 
@@ -36,12 +30,12 @@ const reasons = [
   {
     icon: '✅',
     title: 'Reliable',
-    description: 'I show up on time, every time. My word is my reputation.',
+    description: 'We show up on time and make sure the job gets done to your liking.',
   },
   {
     icon: '📍',
     title: 'Local',
-    description: 'I live right in the neighborhood — no travel fees, no strangers.',
+    description: 'We live right in the neighborhood — no travel fees, no strangers.',
   },
   {
     icon: '💰',
@@ -50,8 +44,8 @@ const reasons = [
   },
   {
     icon: '🌟',
-    title: 'Supports a Young Entrepreneur',
-    description: 'Hiring me helps a hardworking teen learn real-world skills and build a future.',
+    title: 'Supports Young Entrepreneurs',
+    description: 'Hiring us helps a couple hardworking teen learn real-world skills and build a future.',
   },
 ]
 
@@ -128,13 +122,13 @@ function JacksonSite() {
             onClick={() => scrollTo('hero')}
             className="text-yellow-400 font-extrabold text-xl tracking-tight hover:text-yellow-300 transition-colors"
           >
-            ⚡ Jackson's Services
+            ⚡ Cleaning Buddies
           </button>
 
           {/* Desktop nav */}
           <div className="hidden md:flex gap-8">
             <NavLink href="#services">Services</NavLink>
-            <NavLink href="#why">Why Hire Me?</NavLink>
+            <NavLink href="#why">Hire Us?</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </div>
 
@@ -162,7 +156,7 @@ function JacksonSite() {
                     onClick={() => scrollTo(id)}
                     className="block w-full text-left px-5 py-3 text-white/90 hover:bg-white/10 hover:text-yellow-300 font-semibold text-sm capitalize transition-colors"
                   >
-                    {id === 'why' ? 'Why Hire Me?' : id.charAt(0).toUpperCase() + id.slice(1)}
+                    {id === 'why' ? 'Why Hire Us?' : id.charAt(0).toUpperCase() + id.slice(1)}
                   </button>
                 ))}
               </div>
@@ -178,7 +172,7 @@ function JacksonSite() {
       >
         <div className="max-w-3xl mx-auto px-6 py-20 md:py-28 text-center">
           <div className="inline-block bg-yellow-400 text-blue-900 font-extrabold text-sm px-4 py-1.5 rounded-full mb-6 tracking-wide uppercase">
-            Your Neighborhood's Go-To Guy 🙌
+            Your Neighborhood's Go-To Cleaners
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
             Quality Services,<br />
@@ -186,8 +180,8 @@ function JacksonSite() {
             Right Next Door.
           </h1>
           <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed max-w-xl mx-auto">
-            Hey, I'm <strong className="text-white">Jackson</strong> — a hardworking teen in your neighborhood ready to
-            help with lawn care, car washing, errands, and more. Fast, friendly, and affordable.
+            Hey, we are <strong className="text-white">Jackson</strong> and <strong className="text-white">Spencer</strong> — a hardworking team in your neighborhood ready to
+            help with trash bin cleaning + deodorizing, exterior car washing, and window cleaning. Fast, friendly, and affordable.
           </p>
           <a
             href="#contact"
@@ -208,13 +202,13 @@ function JacksonSite() {
 
       {/* About */}
       <section className="max-w-2xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-5">About Me 👋</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-5">About Us 👋</h2>
         <p className="text-gray-600 text-lg leading-relaxed">
-          I'm Jackson, a teenager who lives right in this neighborhood. I started offering services
-          because I love staying busy, meeting people, and earning my own way. I take pride in every
-          job I do — big or small — and my goal is always to leave you completely satisfied.
-          I'm honest, punctual, and I'll treat your property like it's my own. When you hire me,
-          you're not just getting a service — you're investing in a local kid's future. 💪
+          We are Jackson and Spencer, two teenagers who live right in this neighborhood. We started offering services
+          because we love staying busy, meeting people, and earning our own way. We take pride in every
+          job we do — big or small — and our goal is always to leave you completely satisfied.
+          We're honest, punctual, and we'll treat your property like it's our own. When you hire us,
+          you're not just getting a service — you're investing in two local kids' futures. 💪
         </p>
       </section>
 
@@ -225,7 +219,7 @@ function JacksonSite() {
             <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-3">Services & Pricing 💼</h2>
             <p className="text-gray-500 text-lg">Simple, upfront pricing. No surprises.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
               <ServiceCard key={s.name} {...s} />
             ))}
@@ -233,14 +227,14 @@ function JacksonSite() {
         </div>
       </section>
 
-      {/* Why Hire Me */}
+      {/* Why Hire Us */}
       <section
         id="why"
         className="py-16 px-6 bg-gradient-to-br from-blue-800 to-blue-900"
       >
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">Why Hire Me? 🏆</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">Why Hire Us? 🏆</h2>
             <p className="text-blue-200 text-lg">Here's what sets me apart from the rest.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -260,14 +254,13 @@ function JacksonSite() {
           </p>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-8">
-            <p className="text-gray-500 text-sm uppercase tracking-widest font-semibold mb-3">Call or Text Jackson</p>
+            <p className="text-gray-500 text-sm uppercase tracking-widest font-semibold mb-3">Call or Text To Schedule a Service</p>
             <a
               href="tel:+15712053378"
               className="text-4xl md:text-5xl font-extrabold text-blue-900 hover:text-blue-700 transition-colors block mb-2"
             >
               (571) 205-3378
             </a>
-            <p className="text-gray-400 text-sm">Available Mon–Sat · Usually responds within the hour</p>
           </div>
 
           <a
@@ -278,14 +271,14 @@ function JacksonSite() {
           </a>
 
           <p className="mt-8 text-gray-400 text-sm">
-            Not sure what you need? Just text "HELP" and I'll figure it out with you!
+            Not sure what you need? Just text and we'll figure it out with you!
           </p>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="bg-blue-900 text-blue-300 text-center py-6 px-4">
-        <p className="font-bold text-white mb-1">⚡ Jackson's Neighborhood Services</p>
+        <p className="font-bold text-white mb-1">⚡ Cleaning Buddies</p>
         <p className="text-sm">Serving your community with pride · <a href="tel:+15712053378" className="hover:text-yellow-400 transition-colors">(571) 205-3378</a></p>
       </footer>
     </div>

@@ -14,7 +14,7 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: "Jackson's Neighborhood Services",
+        title: "Cleaning Buddies",
       },
       {
         name: 'description',

@@ -188,7 +188,7 @@ function JacksonSite() {
             onClick={(e) => { e.preventDefault(); scrollTo('contact') }}
             className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-extrabold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
           >
-            Text Me to Schedule! 📱
+            Click Here to Text! 📱
           </a>
         </div>
 
@@ -267,7 +267,7 @@ function JacksonSite() {
             href="sms:+15712053378"
             className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-extrabold text-xl px-12 py-5 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto"
           >
-            📱 Text Me to Schedule!
+            📱 Click Here to Text!
           </a>
 
           <p className="mt-8 text-gray-400 text-sm">

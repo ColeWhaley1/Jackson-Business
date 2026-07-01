@@ -24,6 +24,18 @@ const services = [
     price: '$5/small, $10/large',
     description: 'Crystal clear windows that let the sunshine in.',
   },
+  {
+    icon: '🌳',
+    name: 'Yard Work',
+    price: '$30/hr',
+    description: 'Raking, mulching, weed pulling, small tree removal, and general yard cleaning to keep your yard looking its best.',
+  },
+  {
+    icon: '💧',
+    name: 'Pressure Washing',
+    price: '$40',
+    description: 'Backyards, bricks, doors, stone, stairs, and walkways — blasting away dirt and grime for a like-new finish.',
+  },
 ]
 
 const reasons = [
